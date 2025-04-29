@@ -14,7 +14,7 @@
 </head>
 
   <body>
-<section>
+<section id="hero">
   <section>
     <!-- content will go here -->
     <article>
@@ -29,7 +29,7 @@
       </button>
     </article>
 
-    <article>
+    <article id="hero-card">
       <img src="/deploy/img/hero/quote.svg" alt="quote" />
       <img src="/deploy/img/hero/star.svg" alt="star" />
       <h5>4.9</h5>
@@ -42,25 +42,34 @@
 
   <aside>
     <!-- tag for image -->
-    <img src="/deploy/img/hero/hero-right.png" alt="image of happy person" />
+    <img
+      src="/deploy/img/hero/hero-right.png"
+      alt="image of happy person"
+      class="img-scaler"
+    />
   </aside>
 </section>
-<section>
+<section id="packages">
   <h1>Popular packages</h1>
   <img src="/deploy/img/global/Ellipse 11.svg" alt="" />
-  <button>
-    <img src="/deploy/img/packages/arrow-left.svg" alt="left button" />
-  </button>
-  <button>
-    <img
-      src="/deploy/img/packages/chevron-right-solid.svg"
-      alt="right button"
-    />
-  </button>
-
-  <ul>
-    <li>
-      <img src="/deploy/img/packages/card1.jpg" alt="hero image" />
+  <div id="package-btn-container">
+    <button id="left-arrow">
+      <img src="/deploy/img/packages/arrow-left.svg" alt="left button" />
+    </button>
+    <button id="right-arrow">
+      <img
+        src="/deploy/img/packages/chevron-right-solid.svg"
+        alt="right button"
+      />
+    </button>
+  </div>
+  <ul id="package-card-container">
+    <li class="package-card">
+      <img
+        src="/deploy/img/packages/card1.jpg"
+        alt="hero image"
+        class="img-scaler"
+      />
       <p>The basic package to start your promotion</p>
       <ul>
         <li>
@@ -77,8 +86,12 @@
       <h3>$89.00</h3>
     </li>
 
-    <li>
-      <img src="/deploy/img/packages/card2.jpg" alt="hero image" />
+    <li class="selected package-card">
+      <img
+        src="/deploy/img/packages/card2.jpg"
+        alt="hero image"
+        class="img-scaler"
+      />
       <p>The standard package to grow your business</p>
       <ul>
         <li>
@@ -95,8 +108,12 @@
       <h3>$109.00</h3>
     </li>
 
-    <li>
-      <img src="/deploy/img/packages/card3.jpg" alt="hero image" />
+    <li class="package-card">
+      <img
+        src="/deploy/img/packages/card3.jpg"
+        alt="hero image"
+        class="img-scaler"
+      />
       <p>The premium package to boost your promotion</p>
       <ul>
         <li>
@@ -114,14 +131,14 @@
     </li>
   </ul>
 </section>
-<section>
+<section id="newsletter">
   <section>
     <h1>Subscribe newsletter</h1>
     <img src="/deploy/img/global/Ellipse 11.svg" alt="" />
     <p>
       Businesses generally promote their brand, products, and services by
       identifying audience. No wonder that promotion strategy is one of the most
-      important processes in marketing.
+      important processes in marketing!
     </p>
 
     <form action="#">
@@ -144,7 +161,7 @@
     </p>
   </section>
   <aside>
-    <img src="/deploy/img/communication/image.jpg" alt="" />
+    <img src="/deploy/img/communication/image.jpg" alt="" class="img-scaler" />
   </aside>
 </section>
 <section>
@@ -209,7 +226,11 @@
     </article>
   </section>
   <aside>
-    <img src="/deploy/img/about/about-hero.jpg" alt="two happy people" />
+    <img
+      src="/deploy/img/about/about-hero.jpg"
+      alt="two happy people"
+      class="img-scaler"
+    />
   </aside>
 </section>
 

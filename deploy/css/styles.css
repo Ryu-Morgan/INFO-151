@@ -316,6 +316,14 @@ template {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --white80: #ffffff80;
+  --ghost: #f0faff;
+  --lilyWhite: #ecf9ff;
+  --snowdrop: #f9fdff;
+  --aqua: #00e5cc;
+  --nightBlue: #060640;
+  --grey: #9090a7;
+  --jaguar: #000020;
 }
 
 /* ---------------- Font Sizing ---------------- */
@@ -324,6 +332,10 @@ html {
 }
 
 /* ---------------- Media Queries ---------------- */
+.img-scaler {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -359,3 +371,91 @@ textarea {
 /* =============
     Footer
 ============= */
+/* =============
+    Hero
+============= */
+#hero {
+  background-color: var(--lilyWhite);
+}
+#hero section article h1 {
+  color: var(--nightBlue);
+}
+#hero section article p {
+  color: var(--grey);
+}
+#hero section article a:link,
+#hero section article a:visited {
+  background-color: var(--nightBlue);
+  color: var(--white);
+}
+#hero section article button {
+  background-color: var(--white);
+  border: none;
+}
+#hero section #hero-card {
+  background-color: var(--snowdrop);
+}
+#hero section #hero-card h5 {
+  color: var(--nightBlue);
+}
+/* =============
+    Packages
+============= */
+#packages {
+  background-color: var(--lilyWhite);
+}
+#packages h1 {
+  color: var(--nightBlue);
+}
+#packages #package-btn-container {
+  background-color: var(--white);
+}
+#packages #package-btn-container button {
+  border: none;
+}
+#packages #package-btn-container #left-arrow {
+  background-color: var(--white);
+  color: var(--grey);
+}
+#packages #package-btn-container #right-arrow {
+  background-color: var(--aqua);
+  color: var(--white);
+}
+#packages #package-card-container .package-card {
+  background-color: var(--white80);
+  border: 1px solid var(--white);
+}
+#packages #package-card-container .package-card p {
+  color: var(--nightBlue);
+}
+#packages #package-card-container .package-card h3 {
+  color: var(--aqua);
+}
+#packages #package-card-container .package-card h4 {
+  color: var(--grey);
+}
+#packages #package-card-container .selected {
+  background-color: var(--white);
+}
+
+/* =============
+    Newsletter
+============= */
+#newsletter {
+  background-color: var(--lilyWhite);
+}
+#newsletter h1 {
+  color: var(--nightBlue);
+}
+#newsletter p {
+  color: var(--grey);
+}
+#newsletter form input {
+  border: none;
+  color: var(--grey);
+}
+#newsletter form button {
+  border: none;
+  background-color: var(--nightBlue);
+  color: var(--white);
+}
