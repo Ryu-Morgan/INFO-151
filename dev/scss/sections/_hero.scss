@@ -6,6 +6,7 @@
 
 #hero {
   background-color: var(--lilyWhite);
+  padding: 56px 24px 56px 24px;
 
   section {
     article {
@@ -14,24 +15,47 @@
       }
       p {
         color: var(--grey);
+        font-weight: 600;
+        line-height: helpers.rem-calc(28);
+        margin-top: 24px;
+        margin-bottom: 24px;
       }
       //   LOVE HATE
       a:link,
       a:visited {
         background-color: var(--nightBlue);
         color: var(--white);
+        font-size: helpers.rem-calc(14);
+        font-weight: 600;
+        padding: 22px 36px;
+        border-radius: 6px;
+        // code for week 4
+        display: inline-block;
+        margin-right: 30px;
       }
 
       button {
         background-color: var(--white);
         border: none;
+        height: 60px;
+        width: 60px;
+        border-radius: 100%;
       }
     }
     #hero-card {
       background-color: var(--snowdrop);
+      margin-top: 70px;
+      padding: 24px 20px;
+      border-radius: 12px;
 
       h5 {
         color: var(--nightBlue);
+        font-weight: 600;
+        font-size: helpers.rem-calc(14);
+      }
+      p {
+        font-size: helpers.rem-calc(14);
+        font-weight: 600;
       }
     }
   }

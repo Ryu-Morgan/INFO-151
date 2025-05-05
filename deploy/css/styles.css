@@ -324,6 +324,7 @@ template {
   --nightBlue: #060640;
   --grey: #9090a7;
   --jaguar: #000020;
+  --pinkpanther: #ff4755;
 }
 
 /* ---------------- Font Sizing ---------------- */
@@ -332,6 +333,29 @@ html {
 }
 
 /* ---------------- Media Queries ---------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 .img-scaler {
   width: 100%;
 }
@@ -376,27 +400,50 @@ textarea {
 ============= */
 #hero {
   background-color: var(--lilyWhite);
+  padding: 56px 24px 56px 24px;
 }
 #hero section article h1 {
   color: var(--nightBlue);
 }
 #hero section article p {
   color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 #hero section article a:link,
 #hero section article a:visited {
   background-color: var(--nightBlue);
   color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 22px 36px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-right: 30px;
 }
 #hero section article button {
   background-color: var(--white);
   border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
 }
 #hero section #hero-card {
   background-color: var(--snowdrop);
+  margin-top: 70px;
+  padding: 24px 20px;
+  border-radius: 12px;
 }
 #hero section #hero-card h5 {
   color: var(--nightBlue);
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+#hero section #hero-card p {
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 /* =============
     Packages
@@ -459,3 +506,24 @@ textarea {
   background-color: var(--nightBlue);
   color: var(--white);
 }
+
+/* =============
+    About
+============= */
+/* =============
+    Communication
+============= */
+#communication {
+  background-color: var(--white);
+  border-color: var(--pinkpather);
+}
+#communication h1 {
+  color: var(--nightBlue);
+}
+#communication p {
+  color: var(--grey);
+}
+
+/* =============
+    Process
+============= */
