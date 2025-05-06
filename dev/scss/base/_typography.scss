@@ -12,3 +12,9 @@ body {
   line-height: helpers.rem-calc(65);
   color: var(--nightBlue);
 }
+
+.body-grey-text {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 28px;
+}

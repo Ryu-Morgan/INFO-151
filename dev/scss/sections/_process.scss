@@ -1,3 +1,31 @@
 /* =============
     Process
 ============= */
+
+@use "../helpers";
+
+#process {
+  padding: 40px 24px;
+  .works-p {
+    margin: 12px 0px 24px;
+  }
+  ul {
+    li {
+      border: 1px solid var(--lilyWhite);
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      background-color: var(--white);
+
+      h2 {
+        color: var(--nightBlue);
+        font-size: helpers.rem-calc(24);
+        margin: 40px 0 12px;
+      }
+    }
+
+    #selected {
+      filter: drop-shadow(0px 30px 50px #03032508);
+    }
+  }
+}

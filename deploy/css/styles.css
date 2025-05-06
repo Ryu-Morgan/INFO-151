@@ -373,6 +373,12 @@ body {
   color: var(--nightBlue);
 }
 
+.body-grey-text {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 28px;
+}
+
 /* =============
     Buttons
 ============= */
@@ -610,7 +616,6 @@ textarea {
   color: var(--nightBlue);
 }
 #communication p {
-  color: var(--grey);
   margin: 24px 0px 48px;
 }
 #communication aside img {
@@ -620,3 +625,25 @@ textarea {
 /* =============
     Process
 ============= */
+#process {
+  padding: 40px 24px;
+}
+#process .works-p {
+  margin: 12px 0px 24px;
+}
+#process ul li {
+  border: 1px solid var(--lilyWhite);
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  background-color: var(--white);
+}
+#process ul li h2 {
+  color: var(--nightBlue);
+  font-size: 1.5rem;
+  margin: 40px 0 12px;
+}
+#process ul #selected {
+  -webkit-filter: drop-shadow(0px 30px 50px rgba(3, 3, 37, 0.031372549));
+          filter: drop-shadow(0px 30px 50px rgba(3, 3, 37, 0.031372549));
+}
