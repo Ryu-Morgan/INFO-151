@@ -360,6 +360,10 @@ ul li {
   width: 100%;
 }
 
+.content-padding {
+  padding: 40px 24px;
+}
+
 /* =============
     Typography
 ============= */
@@ -543,9 +547,6 @@ textarea {
 /* =============
     Newsletter
 ============= */
-#newsletter {
-  padding: 40px 24px;
-}
 #newsletter #newsletter-content {
   background-color: var(--lilyWhite);
   padding: 60px 16px;
@@ -604,12 +605,24 @@ textarea {
 /* =============
     About
 ============= */
+#about section .about-p {
+  margin: 24px 0px 40px;
+}
+#about section ul li h2 {
+  color: var(--nightBlue);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+#about aside {
+  margin-top: 68px;
+}
+
 /* =============
     Communication
 ============= */
 #communication {
   background-color: var(--white);
-  padding: 40px 24px;
   text-align: center;
 }
 #communication h1 {
@@ -625,9 +638,6 @@ textarea {
 /* =============
     Process
 ============= */
-#process {
-  padding: 40px 24px;
-}
 #process .works-p {
   margin: 12px 0px 24px;
 }
