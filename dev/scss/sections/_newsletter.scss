@@ -4,26 +4,60 @@
 @use "../helpers";
 
 #newsletter {
-  background-color: var(--lilyWhite);
+  padding: 40px 24px;
+  #newsletter-content {
+    background-color: var(--lilyWhite);
+    padding: 60px 16px;
 
-  h1 {
-    color: var(--nightBlue);
-  }
-
-  p {
-    color: var(--grey);
-  }
-
-  form {
-    input {
-      border: none;
-      color: var(--grey);
+    h1 {
+      color: var(--nightBlue);
     }
 
-    button {
-      border: none;
-      background-color: var(--nightBlue);
-      color: var(--white);
+    p {
+      color: var(--grey);
+      font-weight: 600;
+      line-height: helpers.rem-calc(28);
+      margin: 16px 0px;
+    }
+
+    form {
+      input {
+        border: none;
+        color: var(--grey);
+        font-weight: 600;
+        width: 100%;
+        padding: 24px 8px;
+        box-sizing: border-box;
+        border-radius: 8px;
+        margin-bottom: 16px;
+      }
+
+      ::placeholder {
+        color: var(--grey);
+        font-weight: 600;
+      }
+
+      :-ms-input-placeholder {
+        color: var(--grey);
+        font-weight: 600;
+      }
+
+      button {
+        // background-color: var(--nightBlue);
+        // color: var(--white);
+        // font-size: helpers.rem-calc(14);
+        // font-weight: 600;
+        // padding: 22px 36px;
+        // border-radius: 6px;
+        // border: none;
+      }
+      div {
+        text-align: right;
+      }
+    }
+    aside {
+      //week 4 code
+      display: none;
     }
   }
 }

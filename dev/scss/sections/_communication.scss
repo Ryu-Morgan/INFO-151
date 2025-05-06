@@ -5,7 +5,8 @@
 
 #communication {
   background-color: var(--white);
-  border-color: var(--pinkpather);
+  padding: 40px 24px;
+  text-align: center;
 
   h1 {
     color: var(--nightBlue);
@@ -13,5 +14,11 @@
 
   p {
     color: var(--grey);
+    margin: 24px 0px 48px;
+  }
+  aside {
+    img {
+      margin-bottom: 107px;
+    }
   }
 }

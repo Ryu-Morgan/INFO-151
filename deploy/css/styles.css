@@ -363,9 +363,40 @@ ul li {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.section-title {
+  font-size: 3.125rem;
+  line-height: 4.0625rem;
+  color: var(--nightBlue);
+}
+
 /* =============
     Buttons
 ============= */
+.nightblue-btn {
+  background-color: var(--nightBlue);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 22px 36px;
+  border-radius: 6px;
+  border: none;
+}
+
+.nightblue-link {
+  background-color: var(--nightBlue);
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 22px 36px;
+  border-radius: 6px;
+  display: inline-block;
+  margin-right: 30px;
+}
+
 /* =============
     Forms
 ============= */
@@ -450,30 +481,48 @@ textarea {
 ============= */
 #packages {
   background-color: var(--lilyWhite);
+  padding: 100px 24px;
 }
 #packages h1 {
   color: var(--nightBlue);
 }
-#packages #package-btn-container {
-  background-color: var(--white);
+#packages #top-content {
+  text-align: center;
 }
-#packages #package-btn-container button {
+#packages #top-content #package-btn-container {
+  background-color: var(--white);
+  margin: 24px 0 24px 0;
+  padding: 8px;
+  border-radius: 10px;
+  display: inline-block;
+}
+#packages #top-content #package-btn-container button {
   border: none;
 }
-#packages #package-btn-container #left-arrow {
+#packages #top-content #package-btn-container #left-arrow {
   background-color: var(--white);
   color: var(--grey);
+  padding: 13px 18px;
 }
-#packages #package-btn-container #right-arrow {
+#packages #top-content #package-btn-container #right-arrow {
   background-color: var(--aqua);
   color: var(--white);
+  padding: 13px 18px;
+  border-radius: 13px;
 }
 #packages #package-card-container .package-card {
   background-color: var(--white80);
   border: 1px solid var(--white);
+  margin-bottom: 48px;
+  padding: 16px;
+  border-radius: 14px;
 }
 #packages #package-card-container .package-card p {
   color: var(--nightBlue);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  margin: 20px 0 16px 0;
 }
 #packages #package-card-container .package-card h3 {
   color: var(--aqua);
@@ -489,22 +538,61 @@ textarea {
     Newsletter
 ============= */
 #newsletter {
-  background-color: var(--lilyWhite);
+  padding: 40px 24px;
 }
-#newsletter h1 {
+#newsletter #newsletter-content {
+  background-color: var(--lilyWhite);
+  padding: 60px 16px;
+}
+#newsletter #newsletter-content h1 {
   color: var(--nightBlue);
 }
-#newsletter p {
+#newsletter #newsletter-content p {
   color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin: 16px 0px;
 }
-#newsletter form input {
+#newsletter #newsletter-content form input {
   border: none;
   color: var(--grey);
+  font-weight: 600;
+  width: 100%;
+  padding: 24px 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 16px;
 }
-#newsletter form button {
-  border: none;
-  background-color: var(--nightBlue);
-  color: var(--white);
+#newsletter #newsletter-content form ::-webkit-input-placeholder {
+  color: var(--grey);
+  font-weight: 600;
+}
+#newsletter #newsletter-content form ::-moz-placeholder {
+  color: var(--grey);
+  font-weight: 600;
+}
+#newsletter #newsletter-content form :-ms-input-placeholder {
+  color: var(--grey);
+  font-weight: 600;
+}
+#newsletter #newsletter-content form ::-ms-input-placeholder {
+  color: var(--grey);
+  font-weight: 600;
+}
+#newsletter #newsletter-content form ::placeholder {
+  color: var(--grey);
+  font-weight: 600;
+}
+#newsletter #newsletter-content form :-ms-input-placeholder {
+  color: var(--grey);
+  font-weight: 600;
+}
+#newsletter #newsletter-content form div {
+  text-align: right;
+}
+#newsletter #newsletter-content aside {
+  display: none;
 }
 
 /* =============
@@ -515,13 +603,18 @@ textarea {
 ============= */
 #communication {
   background-color: var(--white);
-  border-color: var(--pinkpather);
+  padding: 40px 24px;
+  text-align: center;
 }
 #communication h1 {
   color: var(--nightBlue);
 }
 #communication p {
   color: var(--grey);
+  margin: 24px 0px 48px;
+}
+#communication aside img {
+  margin-bottom: 107px;
 }
 
 /* =============
