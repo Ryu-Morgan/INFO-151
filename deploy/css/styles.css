@@ -788,14 +788,29 @@ textarea {
   background-color: var(--white);
   text-align: center;
 }
-#communication h1 {
+@media (min-width: 1200px) {
+  #communication #communication-content {
+    width: 992px;
+    margin: 0 auto;
+  }
+}
+#communication #communication-content h1 {
   color: var(--nightBlue);
 }
-#communication p {
+#communication #communication-content p {
   margin: 24px 0px 48px;
 }
-#communication aside img {
-  margin-bottom: 107px;
+@media (min-width: 768px) {
+  #communication #communication-content p {
+    padding: 0px 8vw;
+    margin-bottom: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  #communication #communication-img {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 /* =============

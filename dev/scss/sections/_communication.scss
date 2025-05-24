@@ -7,16 +7,30 @@
   background-color: var(--white);
   text-align: center;
 
-  h1 {
-    color: var(--nightBlue);
+  #communication-content {
+    @include helpers.xl {
+      width: 992px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      color: var(--nightBlue);
+    }
+
+    p {
+      margin: 24px 0px 48px;
+
+      @include helpers.md {
+        padding: 0px 8vw;
+        margin-bottom: 24px;
+      }
+    }
   }
 
-  p {
-    margin: 24px 0px 48px;
-  }
-  aside {
-    img {
-      margin-bottom: 107px;
+  #communication-img {
+    @include helpers.xl {
+      width: 1200px;
+      margin: 0 auto;
     }
   }
 }
