@@ -4,12 +4,31 @@
 @use "../helpers";
 
 #about {
+  @include helpers.lg {
+    display: grid;
+    grid-template-columns: 50% auto;
+  }
+
+  @include helpers.xl {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   section {
     .about-p {
       margin: 24px 0px 40px;
     }
 
     ul {
+      @include helpers.md {
+        display: grid;
+        grid-template-columns: 50% auto;
+        gap: 16px;
+      }
+
+      @include helpers.lg {
+        grid-template-columns: 1fr;
+      }
+
       li {
         h2 {
           color: var(--nightBlue);
