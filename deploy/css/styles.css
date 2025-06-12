@@ -394,7 +394,7 @@ textarea {
 }
 #home .home-content {
   background-color: var(--white);
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 50px 20px 50px 20px;
 }
@@ -429,23 +429,191 @@ textarea {
   background-color: var(--softPeach);
   margin: 0 auto;
 }
-
-.nav-bar {
+#about .nav-bar {
   background-color: var(--martinique);
   padding: 10px 0;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   width: 100vw;
 }
-
-a {
+#about a {
   color: var(--white);
   text-align: center;
   text-decoration: none;
   font-size: 1.2rem;
   padding: 14px 16px;
 }
+#about a:hover {
+  background-color: var(--studioPurple);
+  color: var(--white);
+}
+#about .about-content {
+  background-color: var(--white);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  border: var(--studioPurple) 5px solid;
+  -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+#about .about-content h1 {
+  color: var(--studioPurple);
+  margin-bottom: 20px;
+}
+#about .about-content p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--grey);
+  margin-bottom: 30px;
+}
+#about .about-content ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#about .about-content ul li img {
+  width: 80px;
+  height: auto;
+  border-radius: 25px;
+}
 
-a:hover {
+/*============
+    RESUME
+============*/
+#resume {
+  background-color: var(--softPeach);
+  margin: 0 auto;
+}
+#resume .nav-bar {
+  background-color: var(--martinique);
+  padding: 10px 0;
+  margin-bottom: 40px;
+  width: 100vw;
+}
+#resume a {
+  color: var(--grey);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 14px 16px;
+}
+#resume a:hover {
+  background-color: var(--studioPurple);
+  color: var(--white);
+}
+#resume h1 {
+  color: var(--studioPurple);
+  text-align: center;
+  margin-bottom: 20px;
+}
+#resume h2 {
+  color: var(--martinique);
+  text-align: center;
+  margin-bottom: 20px;
+}
+#resume p {
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--grey);
+}
+#resume p .class {
+  color: var(--studioPurple);
+  text-decoration: underline;
+}
+#resume .skils-block,
+#resume .experience-block,
+#resume .project-block,
+#resume .education-block,
+#resume .adward-block,
+#resume .org-block {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 30px;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+/*
+=============
+ABOUT
+=============
+*/
+#contact {
+  background-color: var(--softPeach);
+  margin: 0 auto;
+}
+#contact .nav-bar {
+  background-color: var(--martinique);
+  padding: 10px 0;
+  margin-bottom: 40px;
+  width: 100vw;
+}
+#contact a {
+  color: var(--grey);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 14px 16px;
+}
+#contact a:hover {
+  background-color: var(--studioPurple);
+  color: var(--white);
+}
+
+/*
+===============
+PROJECT
+===============
+*/
+#projects {
+  background-color: var(--softPeach);
+  margin: 0 auto;
+}
+#projects .nav-bar {
+  background-color: var(--martinique);
+  padding: 10px 0;
+  margin-bottom: 40px;
+  width: 100vw;
+}
+#projects a {
+  color: var(--grey);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 14px 16px;
+}
+#projects a:hover {
+  background-color: var(--studioPurple);
+  color: var(--white);
+}
+
+#associations {
+  background-color: var(--softPeach);
+  margin: 0 auto;
+}
+#associations .nav-bar {
+  background-color: var(--martinique);
+  padding: 10px 0;
+  margin-bottom: 40px;
+  width: 100vw;
+}
+#associations a {
+  color: var(--white);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 14px 16px;
+}
+#associations a:hover {
   background-color: var(--studioPurple);
   color: var(--white);
 }

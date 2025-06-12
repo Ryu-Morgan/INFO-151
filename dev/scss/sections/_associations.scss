@@ -1,0 +1,29 @@
+// ===========
+// Associations
+// ===========
+
+@use "../helpers";
+#associations {
+  background-color: var(--softPeach);
+  margin: 0 auto;
+
+  .nav-bar {
+    background-color: var(--martinique);
+    padding: 10px 0;
+    margin-bottom: 40px;
+    width: 100vw;
+  }
+
+  a {
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 14px 16px;
+
+    &:hover {
+      background-color: var(--studioPurple);
+      color: var(--white);
+    }
+  }
+}
