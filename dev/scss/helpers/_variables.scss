@@ -18,9 +18,20 @@ $screen-xl-min: 1200px;
 // Extra Extra Large desktops
 $screen-xxl-min: 1440px;
 
-
-// Colors vars
+// Colors vars (https://muffingroup.com/blog/purple-color-palette/)
 :root {
-    --black: #000000;
-    --white: #ffffff;
-  }
+  --black: #000000;
+  --white: #ffffff;
+  --white80: #ffffff80;
+  --ghost: #f0faff;
+  --lilyWhite: #ecf9ff;
+  --snowdrop: #f9fdff;
+  --aqua: #00e5cc;
+  --nightBlue: #060640;
+  --grey: #9090a7;
+  --jaguar: #000020;
+  //   new colors
+  --studioPurple: #5f43b2;
+  --martinique: #3a3153;
+  --softPeach: #fefdfd;
+}

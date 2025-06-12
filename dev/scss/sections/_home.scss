@@ -5,4 +5,61 @@
 @use "../helpers";
 
 #home {
+  background-color: var(--softPeach);
+
+  @include helpers.md {
+  }
+
+  @include helpers.lg {
+  }
+
+  @include helpers.xl {
+  }
+
+  .nav-bar {
+    background-color: var(--martinique);
+    padding: 10px 0;
+    margin-bottom: 15px;
+  }
+  a {
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 14px 16px;
+  }
+  a:hover {
+    background-color: var(--studioPurple);
+    color: var(--white);
+  }
+
+  .home-content {
+    background-color: var(--white);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px 20px 50px 20px;
+    .image-sizer {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 15px;
+      border-radius: 100px;
+      border: var(--studioPurple) 5px solid;
+    }
+    h1 {
+      line-height: 1.25;
+      padding-left: 40px;
+      span {
+        color: var(--studioPurple);
+      }
+    }
+    p {
+      color: var(--white);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      padding: 15px;
+      background-color: var(--studioPurple);
+      border-radius: 100px;
+    }
+  }
 }
