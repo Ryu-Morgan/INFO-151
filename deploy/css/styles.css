@@ -627,6 +627,7 @@ textarea {
   -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   text-align: left;
+  border: var(--studioPurple) 2px solid;
 }
 
 /*
@@ -730,6 +731,7 @@ PROJECT
 ===============
 */
 #projects {
+  margin: 0px;
   background-color: var(--softPeach);
 }
 @media screen and (max-width: 768px) {
@@ -765,16 +767,53 @@ PROJECT
     width: 30px;
   }
 }
-#projects .nav-bar a {
+#projects a {
   color: var(--grey);
   text-align: center;
   text-decoration: none;
   font-size: 1.2rem;
   padding: 14px 16px;
 }
-#projects .nav-bar a:hover {
+#projects a:hover {
   background-color: var(--studioPurple);
   color: var(--white);
+}
+#projects h1 {
+  text-align: center;
+  color: var(--studioPurple);
+  margin-bottom: 20px;
+}
+#projects .coursework-block,
+#projects .personal-work-block {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 20px;
+  border: var(--studioPurple) 5px solid;
+  -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+#projects .coursework-block h2,
+#projects .personal-work-block h2 {
+  color: var(--martinique);
+  margin-bottom: 15px;
+  text-align: center;
+}
+#projects .coursework-block ul,
+#projects .personal-work-block ul {
+  list-style: none;
+}
+#projects .coursework-block ul li,
+#projects .personal-work-block ul li {
+  margin-bottom: 10px;
+}
+#projects .coursework-block ul li strong,
+#projects .personal-work-block ul li strong {
+  color: var(--martinique);
+  font-size: 1.25rem;
+  padding: 10px;
 }
 
 #associations {
@@ -823,4 +862,36 @@ PROJECT
 #associations .nav-bar a:hover {
   background-color: var(--studioPurple);
   color: var(--white);
+}
+#associations h1 {
+  text-align: center;
+  color: var(--studioPurple);
+}
+#associations .associations-content {
+  max-width: 1150px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: var(--white);
+  border-radius: 20px;
+  border: var(--studioPurple) 5px solid;
+  -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+#associations h2 {
+  color: var(--martinique);
+}
+#associations ul {
+  list-style-type: none;
+}
+#associations ul li {
+  margin: 20px;
+}
+#associations .associations-img {
+  width: 180px;
+  height: 140px;
+  border-radius: 25px;
+  padding: 15px;
+  margin-top: 5px;
+  display: inline;
 }

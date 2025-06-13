@@ -7,6 +7,7 @@ PROJECT
 @use "../helpers";
 
 #projects {
+  margin: 0px;
   background-color: var(--softPeach);
 
   @media screen and (max-width: 768px) {
@@ -42,17 +43,48 @@ PROJECT
         }
       }
     }
+  }
+  a {
+    color: var(--grey);
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 14px 16px;
 
-    a {
-      color: var(--grey);
+    &:hover {
+      background-color: var(--studioPurple);
+      color: var(--white);
+    }
+  }
+  h1 {
+    text-align: center;
+    color: var(--studioPurple);
+    margin-bottom: 20px;
+  }
+  .coursework-block,
+  .personal-work-block {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: var(--white);
+    border-radius: 20px;
+    border: var(--studioPurple) 5px solid;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    h2 {
+      color: var(--martinique);
+      margin-bottom: 15px;
       text-align: center;
-      text-decoration: none;
-      font-size: 1.2rem;
-      padding: 14px 16px;
-
-      &:hover {
-        background-color: var(--studioPurple);
-        color: var(--white);
+    }
+    ul {
+      list-style: none;
+      li {
+        margin-bottom: 10px;
+        strong {
+          color: var(--martinique);
+          font-size: 1.25rem;
+          padding: 10px;
+        }
       }
     }
   }
