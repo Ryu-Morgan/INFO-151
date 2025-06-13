@@ -14,7 +14,7 @@
     width: 100vw;
   }
   a {
-    color: var(--white);
+    color: var(--grey);
     text-align: center;
     text-decoration: none;
     font-size: 1.2rem;
@@ -57,6 +57,7 @@
           width: 80px;
           height: auto;
           border-radius: 25px;
+          padding: 15px;
         }
       }
     }

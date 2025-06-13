@@ -382,7 +382,7 @@ textarea {
   margin-bottom: 15px;
 }
 #home a {
-  color: var(--white);
+  color: var(--grey);
   text-align: center;
   text-decoration: none;
   font-size: 1.2rem;
@@ -405,6 +405,8 @@ textarea {
   margin-top: 15px;
   border-radius: 100px;
   border: var(--studioPurple) 5px solid;
+  -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
 }
 #home .home-content h1 {
   line-height: 1.25;
@@ -436,7 +438,7 @@ textarea {
   width: 100vw;
 }
 #about a {
-  color: var(--white);
+  color: var(--grey);
   text-align: center;
   text-decoration: none;
   font-size: 1.2rem;
@@ -481,6 +483,7 @@ textarea {
   width: 80px;
   height: auto;
   border-radius: 25px;
+  padding: 15px;
 }
 
 /*============
@@ -567,6 +570,45 @@ ABOUT
 #contact a:hover {
   background-color: var(--studioPurple);
   color: var(--white);
+}
+#contact .connect-content {
+  background-color: var(--white);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 20px;
+  border: var(--studioPurple) 5px solid;
+  -webkit-box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+#contact .connect-content h1 {
+  color: var(--studioPurple);
+  margin-bottom: 20px;
+}
+#contact .connect-content p {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--grey);
+  margin-bottom: 30px;
+}
+#contact .connect-content ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+#contact .connect-content ul li img {
+  width: 125px;
+  height: 80px;
+  border-radius: 25px;
+  padding: 5px;
 }
 
 /*

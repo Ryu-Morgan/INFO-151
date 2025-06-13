@@ -7,22 +7,13 @@
 #home {
   background-color: var(--softPeach);
 
-  @include helpers.md {
-  }
-
-  @include helpers.lg {
-  }
-
-  @include helpers.xl {
-  }
-
   .nav-bar {
     background-color: var(--martinique);
     padding: 10px 0;
     margin-bottom: 15px;
   }
   a {
-    color: var(--white);
+    color: var(--grey);
     text-align: center;
     text-decoration: none;
     font-size: 1.2rem;
@@ -45,6 +36,7 @@
       margin-top: 15px;
       border-radius: 100px;
       border: var(--studioPurple) 5px solid;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
     }
     h1 {
       line-height: 1.25;
