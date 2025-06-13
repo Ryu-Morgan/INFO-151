@@ -7,21 +7,51 @@
 #home {
   background-color: var(--softPeach);
 
+  @media screen and (max-width: 768px) {
+    .nav-bar a:not(:last-child) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav-bar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
   .nav-bar {
     background-color: var(--martinique);
     padding: 10px 0;
     margin-bottom: 15px;
-  }
-  a {
-    color: var(--grey);
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.2rem;
-    padding: 14px 16px;
-  }
-  a:hover {
-    background-color: var(--studioPurple);
-    color: var(--white);
+    .burger-icon {
+      display: none;
+      // not using the helper vars for the responsive feature
+      @media (max-width: 768px) {
+        display: inline-block;
+        img {
+          width: 30px;
+        }
+      }
+    }
+
+    a {
+      color: var(--grey);
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 14px 16px;
+    }
+    a:hover {
+      background-color: var(--studioPurple);
+      color: var(--white);
+    }
   }
 
   .home-content {

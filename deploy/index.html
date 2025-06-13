@@ -12,13 +12,21 @@
 <section id="home">
   <!-- nav bar  -->
   <!-- reference/help (https://www.w3schools.com/howto/howto_js_topnav.asp) -->
-  <div class="nav-bar">
+  <!-- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+  <div class="nav-bar" id="nav-bar">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="resume.html">Resume</a>
     <a href="contact.html">Contact</a>
     <a href="projects.html">Projects</a>
     <a href="associations.html">Associations</a>
+    <a
+      href="javascript:void(0);"
+      class="burger-icon"
+      onclick="responsiveBurger()"
+    >
+      <img src="img/home/burger-bar.png" alt="burger menu" />
+    </a>
   </div>
   <div class="home-content">
     <!-- home page personal image -->
