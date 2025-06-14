@@ -923,6 +923,18 @@ textarea {
     margin: 0 auto;
   }
 }
+@media (min-width: 768px) {
+  #communication #communication-content #comms-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 768px) {
+  #communication #communication-content #comms-title #comms-first-title {
+    margin-right: 16px;
+  }
+}
 #communication #communication-content h1 {
   color: var(--nightBlue);
 }

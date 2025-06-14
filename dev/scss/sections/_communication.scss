@@ -12,6 +12,16 @@
       width: 992px;
       margin: 0 auto;
     }
+    #comms-title {
+      @include helpers.md {
+        display: flex;
+      }
+      #comms-first-title {
+        @include helpers.md {
+          margin-right: 16px;
+        }
+      }
+    }
 
     h1 {
       color: var(--nightBlue);
