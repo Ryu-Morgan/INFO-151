@@ -14,6 +14,20 @@
 
   #top-content {
     text-align: center;
+
+    @include helpers.md {
+      display: flex;
+      align-items: center;
+    }
+
+    @include helpers.xl {
+      max-width: 1200px;
+      margin: 0 auto 70px;
+    }
+
+    @include helpers.lg {
+      margin-bottom: 70px;
+    }
     #package-btn-container {
       background-color: var(--white);
       margin: 24px 0 24px 0;
@@ -21,6 +35,9 @@
       border-radius: 10px;
       // WEEK 4 CODE
       display: inline-block;
+      @include helpers.md {
+        margin-left: auto;
+      }
 
       button {
         border: none;
@@ -80,21 +97,29 @@
         margin: 20px 0 16px 0;
       }
 
-      .user-icons {
-        li {
-          height: 36px;
-          width: 36px;
-          border: 1px solid var(--white);
-          border-radius: 100%;
+      .package-status-bar {
+        display: flex;
+        .user-icons {
+          display: flex;
+          li {
+            height: 36px;
+            width: 36px;
+            border: 1px solid var(--white);
+            border-radius: 100%;
+            margin-left: -15px;
+          }
         }
-      }
+        h3 {
+          color: var(--aqua);
+          font-weight: 600;
+          margin-left: 20px;
+        }
 
-      h3 {
-        color: var(--aqua);
-      }
-
-      h4 {
-        color: var(--grey);
+        h4 {
+          color: var(--grey);
+          font-weight: 600;
+          margin-left: auto;
+        }
       }
     }
 
@@ -129,7 +154,7 @@
       grid-area: card-2;
     }
     .package-card-img {
-      background-image: url("../img/packages/card5.jpg");
+      background-image: url("../img/packages/card3.jpg");
     }
     .icon-1 {
       background-image: url("../img/packages/user3.jpg");
