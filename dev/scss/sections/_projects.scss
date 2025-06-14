@@ -7,7 +7,7 @@ PROJECT
 @use "../helpers";
 
 #projects {
-  margin: 0px;
+  margin: 15px;
   background-color: var(--softPeach);
 
   @media screen and (max-width: 768px) {
